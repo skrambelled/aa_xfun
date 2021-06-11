@@ -1,7 +1,8 @@
-#include <daemons.h>
 #include <xfun.h>
+#include <daemons.h>
 
 inherit XFUN;
+inherit COLOURUTIL_D;
 
 private string _colour_basic_variable(mixed arg) {
   string colour;
