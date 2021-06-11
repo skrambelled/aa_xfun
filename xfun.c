@@ -1,3 +1,5 @@
+#pragma strict_types
+
 #include <xfun.h>
 #include <daemons.h>
 
@@ -35,10 +37,10 @@ public string variable_to_string_colour(mixed variable) {
       output += variable_to_string_colour(key);
       for(j=0; j<width; j++) {
         if(j==0)
-          output += ": ";
+          output += icyan(": ");
         output += variable_to_string_colour(variable[key, j]);
         if( j < width - 1)
-          output += "; ";
+          output += icyan("; ");
       }
       if( i < sizeof(keys) -1 )
         output += icyan(", ");
