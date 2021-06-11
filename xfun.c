@@ -1,5 +1,5 @@
 #include <daemons.h>
-#include <xfun>
+#include <xfun.h>
 
 inherit XFUN;
 
