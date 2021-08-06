@@ -70,16 +70,16 @@ private string my_month(string month_str) {
   }
 }
 
-public date_to_string(int time) {
+public string date_to_string(int time_) {
   string year, month, day;
 
-  if(!time)
-    time = time();
+  if(!time_)
+    time_ = time();
  
   // collect our date info
-  year  = ctime(time)[20..<1];
-  month = my_month(ctime(time)[4..6]);
-  day   = ctime(time)[8..9];
+  year  = ctime(time_)[20..<1];
+  month = my_month(ctime(time_)[4..6]);
+  day   = ctime(time_)[8..9];
     
   // account for whitespace in the day of the month int
   if(day[0..0] == " ")
